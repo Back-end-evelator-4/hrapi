@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail page</title>
+</head>
+<body>
+
+<p>// Detail page</p>
+<h3>{{ post.title }}</h3>
+<p>{{ post.content }}</p>
+{% if post.likes.all %}
+    <p>likes list:</p>
+    {% for like in post.likes.all %}
+        <p>{{ like.username }}</p>
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>

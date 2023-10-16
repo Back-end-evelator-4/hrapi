@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create page</title>
+</head>
+<body>
+
+<p>// Create page</p>
+
+
+<form method="post">
+    {% csrf_token %}
+    <p><input type="text" name="title"></p>
+    <p><input type="text" name="content"></p>
+    <p><input type="submit" value="Create"></p>
+</form>
+
+</body>
+</html>
